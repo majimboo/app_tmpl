@@ -1,15 +1,21 @@
 <template>
-  <div>
-    <h1>Welcome to your new Vue.js App!</h1>
+  <div id="app">
+    <router-view />
   </div>
 </template>
 
 <script>
+import { useAuthStore } from './stores/auth'
+import './api/axios'
+
 export default {
-  name: 'App'
+  name: 'App',
+  setup() {
+    const authStore = useAuthStore()
+    
+    authStore.initializeAuth()
+    
+    return {}
+  }
 }
 </script>
-
-<style>
-/* Add global styles here if needed */
-</style>

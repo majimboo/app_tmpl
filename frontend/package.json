@@ -1,9 +1,9 @@
 {
-  "name": "notaryodb-frontend",
+  "name": "power-app-frontend",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "NotaryoDB - Notarial Index Database",
+  "description": "Power App",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
