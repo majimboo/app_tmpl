@@ -34,7 +34,7 @@
       <BaseTooltip text="Quickly create a new user with default permissions. This will open the registration form." position="top">
         <button 
           @click="quickAddUser"
-          class="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200 w-full"
+          class="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200 w-full text-left"
         >
           <div class="flex items-center justify-between mb-4">
             <div class="w-12 h-12 bg-blue-100 group-hover:bg-blue-200 rounded-lg flex items-center justify-center transition-colors">
@@ -73,7 +73,7 @@
 
       <button 
         @click="exportData"
-        class="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-purple-200"
+        class="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-purple-200 text-left"
       >
         <div class="flex items-center justify-between mb-4">
           <div class="w-12 h-12 bg-purple-100 group-hover:bg-purple-200 rounded-lg flex items-center justify-center transition-colors">
@@ -91,7 +91,7 @@
 
       <button 
         @click="viewLogs"
-        class="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-orange-200"
+        class="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-orange-200 text-left"
       >
         <div class="flex items-center justify-between mb-4">
           <div class="w-12 h-12 bg-orange-100 group-hover:bg-orange-200 rounded-lg flex items-center justify-center transition-colors">

@@ -77,7 +77,7 @@
             <p class="text-sm font-medium text-neutral-600">System Status</p>
             <p class="text-3xl font-bold text-success-600 mt-2">Online</p>
             <p class="text-xs text-success-600 mt-1 flex items-center">
-              <div class="w-2 h-2 bg-success-400 rounded-full mr-2 animate-pulse"></div>
+              <span class="w-2 h-2 bg-success-400 rounded-full mr-2 animate-pulse"></span>
               All services operational
             </p>
           </div>
