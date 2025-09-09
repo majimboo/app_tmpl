@@ -45,8 +45,13 @@ func UpdateUser(c *fiber.Ctx) error {
 	}
 
 	var req struct {
-		Username string `json:"username"`
-		Password string `json:"password"`
+		Username  string `json:"username"`
+		Email     string `json:"email"`
+		FirstName string `json:"first_name"`
+		LastName  string `json:"last_name"`
+		Gender    string `json:"gender"`
+		Avatar    string `json:"avatar"`
+		Password  string `json:"password"`
 	}
 
 	if err := c.BodyParser(&req); err != nil {
@@ -60,6 +65,29 @@ func UpdateUser(c *fiber.Ctx) error {
 			return c.Status(409).JSON(fiber.Map{"error": "Username already exists"})
 		}
 		user.Username = req.Username
+	}
+
+	if req.Email != "" {
+		// Check if email already exists for another user
+		var existingUser models.User
+		if err := database.DB.Where("email = ? AND id != ?", req.Email, userID).First(&existingUser).Error; err == nil {
+			return c.Status(409).JSON(fiber.Map{"error": "Email already exists"})
+		}
+		user.Email = req.Email
+	}
+
+	// Update profile fields
+	if req.FirstName != "" {
+		user.FirstName = req.FirstName
+	}
+	if req.LastName != "" {
+		user.LastName = req.LastName
+	}
+	if req.Gender != "" {
+		user.Gender = req.Gender
+	}
+	if req.Avatar != "" {
+		user.Avatar = req.Avatar
 	}
 
 	if req.Password != "" {
