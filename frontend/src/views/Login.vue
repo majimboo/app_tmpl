@@ -23,7 +23,7 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
                 </svg>
                 Username
-                <BaseTooltip text="Enter the unique username you chose during registration. This is case-sensitive." position="top">
+                <BaseTooltip text="Enter the unique username you chose during registration. This is case-sensitive." position="top" :showMobileIcon="false">
                   <svg class="w-4 h-4 ml-2 text-neutral-400 hover:text-neutral-600 cursor-help" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                   </svg>
@@ -55,7 +55,7 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
                 </svg>
                 Password
-                <BaseTooltip text="Click the eye icon to show/hide your password. We recommend using a strong, unique password." position="top">
+                <BaseTooltip text="Click the eye icon to show/hide your password. We recommend using a strong, unique password." position="top" :showMobileIcon="false">
                   <svg class="w-4 h-4 ml-2 text-neutral-400 hover:text-neutral-600 cursor-help" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                   </svg>

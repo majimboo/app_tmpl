@@ -24,6 +24,6 @@ export default defineConfig({
                 changeOrigin: true,
             },
         },
-        allowedHosts: ['localhost'],
+        allowedHosts: ['localhost', 'app.majidarif.com'],
     },
 });
